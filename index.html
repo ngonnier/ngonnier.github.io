@@ -2,41 +2,59 @@
 <html>
 <head>
   <meta name="keywords" content="Noémie, Gonnier, Noemie" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="theme.css" />
+
 </head>
 
 <body>
 
-<h1>Noémie Gonnier</h1>
-PhD in computer science at CentraleSupelec and LORIA, Nancy, France.
-I'm interested in self-organization and complex systems.
-<div>
-<h2> Research</h2>
-<p>
-I obtained my PhD in june 2023. The thesis was supervised by Hervé Frezza-Buet and Yann Boniface
-and is entitled : "CxSOM : towards a non-hierarchical architecture of self-organizing maps"
-</p>
-<p>
-The cerebral cortex appears in numerous studies as an architecture of learning modules, the cortical areas, which interact retroactively. This bio-inspired notion of modular architecture has a computational interest in the search for new unsupervised learning paradigms. These are indeed complex systems that are favourable to the emergence of learning mechanisms resulting from the interaction between the modules.
-Based on this biological inspiration, we explore non-hierarchical architectures of self-organizing maps.
-Self-organizing maps (SOMs) are a well known unsupervised learning algorithm that creates a low-dimensional and spatially ordered representation of any input space.
-In this work, we develop a modified model of self-organizing maps, CxSOM (Consensus Driven Multi-SOM), which enables the creation of non-hierarchical architectures of several SOMs that learn from each other.
-We showed that the model was able to complete associative memory tasks, learning on data from different modalities.
-The aim is to learn a representation of several input spaces within the architecture and at the same time extract and reuse the relationships existing between these inputs.
-</p>
-<p>
-The publications related to this work are available on <a href="https://cv.hal.science/noemie-gonnier">HAL</a>.
-</p>
-<p>
-The thesis manuscript (in french) is <a href="https://hal.science/tel-04228165v1">here</a>
-</p>
-<p>
-The CxSOM library is available on <a href = https://github.com/HerveFrezza-Buet/cxsom> Hervé Frezza-Buet's github</a> ! This library allows you to build non-hierarchical architectures of SOMs based on the CxSOM model.
-</p>
-</p>
+    <div class="container">
+        <h1>Noémie Gonnier</h1>
+        <p>
+        PhD in computer science at CentraleSupelec and LORIA, Nancy, France.
+        I'm interested in self-organization and complex systems, particulary in the computational processes existing in biological networks - e.g the nervous system.
+        </p>
 </div>
 
-<div class="teaching">
+<div class="container">
+    <h2> Research</h2>
+    <div class="row">
+        <div class="col">
+        <p>
+        I obtained my PhD in june 2023. The thesis was supervised by <a href="https://frezza.pages.centralesupelec.fr/hfb-com/home/"> Hervé Frezza-Buet </a> and Yann Boniface
+        and is entitled : "CxSOM : towards a non-hierarchical architecture of self-organizing maps. Analysis method and tools"
+        </p>
+        <p>
+        The cerebral cortex appears in numerous studies as an architecture of learning modules, the cortical areas, which interact retroactively. This bio-inspired notion of modular architecture has a computational interest in the search for new unsupervised learning paradigms. These are indeed complex systems that are favourable to the emergence of learning mechanisms resulting from the interaction between the modules.
+        Based on this biological inspiration, we explore non-hierarchical architectures of self-organizing maps.
+        Self-organizing maps (SOMs) are a well known unsupervised learning algorithm that creates a low-dimensional and spatially ordered representation of any input space.
+        In this work, we develop a modified model of self-organizing maps, CxSOM (Consensus Driven Multi-SOM), which enables the creation of non-hierarchical architectures of several SOMs that learn from each other.
+        We showed that the model was able to complete associative memory tasks, learning on data from different modalities.
+        The aim is to learn a representation of several input spaces within the architecture and at the same time extract and reuse the relationships existing between these inputs.
+        </p>
+        <p>
+        The publications related to this work are available on <a href="https://cv.hal.science/noemie-gonnier">HAL</a>.
+        </p>
+        <p>
+        The thesis manuscript (in french) is <a href="https://hal.science/tel-04228165v1">here</a>
+        </p>
+        <p>
+        The CxSOM library is available on <a href = https://github.com/HerveFrezza-Buet/cxsom> Hervé Frezza-Buet's github</a> ! This library allows you to build non-hierarchical architectures of SOMs based on the CxSOM model.
+        </p>
+        </p>
+        </div>
+        <div class="col-sm-4">
+            <img src="maps.svg" alt="cxsom" class="object-fit-scale">
+            <div class="center">
+                Example of a <span class="font-italic"> non-hierarchical</span> architecture of self-organizing maps (SOM). Each SOM learns on a sensory input S from the environment together with information from the other maps.
+            </div>
+        </div>
+    </div>
+</div>
 
+
+<div class="container">
 <h2> Teaching</h2>
     <ul>
         <li>2022-2023 : Teaching assistant (A.T.E.R) at Telecom Nancy France, (Licence degree)
@@ -51,7 +69,7 @@ The CxSOM library is available on <a href = https://github.com/HerveFrezza-Buet/
       </ul>
 
 </div>
-<div class = "cv">
+<div class = "container">
 
 <h2> Education </h2>
 <ul>
@@ -62,15 +80,16 @@ The CxSOM library is available on <a href = https://github.com/HerveFrezza-Buet/
     <li> 2012 : Baccalauréat Général, Lycée Notre Dame, Le Mans, high honors</li>
 </ul>
 </div>
-<div class = "interests">
+<div class = "container">
     <h2> Interests</h2>
     <p> As a scientist, I'm really interested in sharing science to a broader public, especially in the current climate change context. I believe it's crucial for everyone to have access to a more general understanding of the world we all live in and to develop a critical mind.
         I'm also willing to promote the access to scientific education to women.</p>
     <p> I'm a musician, flute and saxophone player, brass band and jazz amateur ! Aside from science, I'm willing to explore art projects, but why not both art and science as well :) </p>
 </div>
 
-<h2> Contact information </h2>
-<div class = "contact">
+
+<div class = "container">
+    <h2> Contact information </h2>
     email : noemie dot gonnier at gmail.com <br>
 </div>
 </body>
